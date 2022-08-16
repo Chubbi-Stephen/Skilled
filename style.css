@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#container{
+    margin: 0.7rem 5rem;
+
+}
+
+body {
+  background-color: rgb(246, 246, 246);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 4%;
+}
+
+.logo {
+  color: #12163e;
+}
+
+.btn {
+  outline: none;
+  appearance: none;
+  border: none;
+  background: #12163e;
+  color: rgb(230, 226, 226);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  text-transform: capitalize;
+  box-shadow: 0.5px 1px 2px black;
+}
+
+#colored {
+  background: linear-gradient(to bottom, #fd6f48, #f53d8d);
+  color: rgb(230, 226, 226);
+}
+
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  height: 80vh;
+  right: 0%;
+}
+
+.hero-sub {
+  position: relative;
+}
+
+.hero-inner-sub {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-inner-sub h2 {
+  color: #12163e;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.hero-inner-sub p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.courses {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  margin-bottom: 6rem;
+}
+
+.course {
+  padding: 9%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(242, 240, 240);
+  border-radius: 0.8rem;
+  margin-bottom: 1.7rem;
+  box-shadow: 0.3px 8px 20px rgb(205, 198, 198);
+  position: relative;
+}
+
+.course h3,
+span {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0rem;
+  font-weight: 800;
+}
+
+.course span {
+  color: #f53d8d;
+}
+
+.course p {
+  color: rgb(82, 78, 78);
+}
+
+.icon-carrier {
+  width: 2rem;
+  height: 2rem;
+  align-self: start;
+  border-radius: 50px;
+  position: absolute;
+  top: -6.5%;
+}
+
+footer {
+  width: 100%;
+  height: 4rem;
+  background: #12163e;
+  margin-bottom: 0;
+}
+
+.logo-white {
+  color: rgb(230, 226, 226);
+}
+
+footer nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav {
+  height: 100%;
+}
+
+footer nav ul li {
+  margin: 0 4%;
+}
