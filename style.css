@@ -172,6 +172,11 @@ footer nav ul li {
   margin: 0 4%;
 }
 
+.footer-colored {
+  background: linear-gradient(to bottom, #7547E7, #BB38B2);
+  color: rgb(230, 226, 226);
+}
+
 @media (max-width: 768px) {
   #container {
     margin: 0.8rem 2rem;
@@ -201,3 +206,6 @@ footer nav ul li {
 @media (max-width: 380px) {
 
 }
+
+
+/* 7547E7 BB38B2 */
