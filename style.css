@@ -244,7 +244,7 @@ footer nav ul li {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 484px) {
   #container {
     margin: 0.8rem 1rem;
   }
