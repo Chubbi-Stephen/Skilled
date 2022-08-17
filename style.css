@@ -6,6 +6,35 @@
   list-style-type: none;
 }
 
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.material-icons.light {
+  color: #fff !important;
+}
+
 #container {
   margin: 0.7rem 5rem;
 }
@@ -13,6 +42,10 @@
 body {
   background-color: rgb(246, 246, 246);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.mobile-bg {
+  display: none;
 }
 
 header {
@@ -32,9 +65,9 @@ header nav ul {
   align-items: center;
 }
 
-/* header nav ul li {
-  margin: 0;
-} */
+.unique {
+  text-align: left;
+}
 
 .logo {
   color: #12163e;
@@ -138,12 +171,20 @@ span {
 }
 
 .icon-carrier {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   align-self: start;
   border-radius: 50px;
   position: absolute;
+  position: relative;
   top: -6.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#colored .icon{
+  margin-left: .7rem;
 }
 
 footer {
@@ -173,7 +214,7 @@ footer nav ul li {
 }
 
 .footer-colored {
-  background: linear-gradient(to bottom, #7547E7, #BB38B2);
+  background: linear-gradient(to bottom, #7547e7, #bb38b2);
   color: rgb(230, 226, 226);
 }
 
@@ -190,8 +231,8 @@ footer nav ul li {
     margin-bottom: 6rem;
   }
 
-  .hero{
-      margin-bottom: 5rem;
+  .hero {
+    margin-bottom: 5rem;
   }
 
   .hero-inner-sub {
@@ -204,8 +245,47 @@ footer nav ul li {
 }
 
 @media (max-width: 380px) {
+  #container {
+    margin: 0.8rem 1rem;
+  }
 
+  .mobile-bg {
+    display: unset;
+  }
+
+  .laptop-bg {
+    display: none;
+  }
+
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+
+  .hero-inner-sub h2 {
+    margin-bottom: 1.4rem;
+  }
+
+  .hero .btn {
+    margin-top: -2rem;
+    width: 50%;
+    padding: 0.6rem;
+  }
+
+  .img img {
+    margin-top: 4rem;
+    width: 100%;
+    height: 60%;
+  }
+
+  .courses {
+    margin-top: -7.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1%;
+    margin-bottom: 6rem;
+  }
 }
-
-
-/* 7547E7 BB38B2 */
